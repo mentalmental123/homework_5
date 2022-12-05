@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="header">
-      <section class="header-flexbox wrapper">
+      <section class="header-flexbox wrapper animated-color">
         <nav class="main-navigation">
           <a class="logo header-logo" href="./index.html"
             ><span class="blue-logo">Web</span
@@ -28,13 +28,17 @@
           >
           <ul class="list-flexbox nav-elements">
             <li class="nav-element">
-              <a class="current nav-part" href="./index.html">Студія</a>
+              <a class="current nav-part animated-color" href="./index.html"
+                >Студія</a
+              >
             </li>
             <li class="nav-element">
-              <a class="nav-part" href="./portfolio.html">Портфоліо</a>
+              <a class="nav-part animated-color" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav-element">
-              <a class="nav-part" href="#">Контакти</a>
+              <a class="nav-part animated-color" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -72,7 +76,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="main-header-button" type="button">
+          <button class="main-header-button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -118,25 +122,34 @@
           <h2 class="jobs-header">Чим ми займаємося</h2>
           <ul class="jobs-type-list">
             <li class="job-part">
-              <img
-                width="370"
-                src="./img/page1/wtwedo.jpg"
-                alt="руки на клавіатурі"
-              />
+              <div class="job-img-container">
+                <img
+                  width="370"
+                  src="./img/page1/wtwedo.jpg"
+                  alt="руки на клавіатурі"
+                />
+                <h3 class="job-part-descr">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="job-part">
-              <img
-                width="370"
-                src="./img/page1/wtwedo1.jpg"
-                alt="людина з телефоном"
-              />
+              <div class="job-img-container">
+                <img
+                  width="370"
+                  src="./img/page1/wtwedo1.jpg"
+                  alt="людина з телефоном"
+                />
+                <h3 class="job-part-descr">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="job-part">
-              <img
-                width="370"
-                src="./img/page1/wtwedo2.jpg"
-                alt="кольорова гамма"
-              />
+              <div class="job-img-container">
+                <img
+                  width="370"
+                  src="./img/page1/wtwedo2.jpg"
+                  alt="кольорова гамма"
+                />
+                <h3 class="job-part-descr">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -558,5 +571,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- backdrop+modal -->
+
+    <div data-modal class="header-backdrop is-hidden">
+      <div class="modal-container">
+        <div class="modal-sectoin">
+          <button data-modal-close class="btn-modal-close"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/modal.js"></script>
   </body>
 </html>

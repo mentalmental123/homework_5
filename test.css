@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(73, 97, 117);
+}
+
+.box{
+    margin-top: 200px;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transition-property: background-color , transform;
+    transition-duration: 250ms;
+    transition-delay: 50ms;
+}
+
+.box:hover{
+    background-color: aquamarine;
+    transform: rotate(30deg);
+}
